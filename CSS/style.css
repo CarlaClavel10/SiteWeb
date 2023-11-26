@@ -8,45 +8,6 @@ body{
 
 /* ----------------------------------- */
 
-
-#NosN{
-	padding-top:140px;
-	padding-bottom:50px;
-}
-
-#NN{
-	text-align:center;
-	font-family: 'Montserrat';
-	font-size:50px;	
-	padding-bottom:2%;
-}
-
-.ligne{
-	
-	flex-wrap:wrap;
-	text-align: center;
-	width:100%;
-}
-
-.oeuvre{
-	border:;
-	width:282px;
-	display:inline-block;
-	padding-left:3%;
-	padding-right:3%;
-	padding-bottom:2%;
-}
-
-.N1{
-	border: 3px solid black;
-}
-
-.texte{
-	text-align: start;
-	line-height: 0;
-}
-
-
 /* Section 1 */
 
 #section1{
@@ -63,6 +24,7 @@ body{
 	color:white;
 	position: absolute;
 	top:0;
+	padding-left:1%;
 }
 
 #T1{
@@ -75,13 +37,177 @@ body{
 
 /* ----------------------------------- */
 
+/* Section 3 */
+
+#section3 h3{
+	font-size:30px;
+	padding-left:15px;
+	color:#EFEFEF;
+	
+}
+
+.TITRE{
+	padding-left:10%;
+	font-size:30px;
+}
+
+#Nosstyles{
+	width:100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#NSP1{
+	display:inline-block;
+	width:42.5%;
+}
+
+#NSP1 img{
+	height: auto; 
+    width: auto; 
+}
+
+#ligne1{
+	display:inline-block;
+}
+
+.styles1{
+	display:inline-block;
+}
+
+.genreI{
+	position:relative;
+}
+
+.genreI h3{
+	position:absolute;
+	top:-20px;
+}
+
+.texte1{
+	width:30%;
+}
+
+.genre1{
+	top:10px;
+}
+
+#NSP2{
+	display:inline-block;
+	width:35%;
+}
+
+.genre2{
+	position:absolute;
+}
+
+.genreII{
+	position:relative;
+}
+
+.genreII h3{
+	position:absolute;
+	top:-20px;
+}
+
+.stylesII{
+	display:inline-block;
+}
+
+.N1:hover{
+	opacity: 0.9;
+
+}
+
+/* ----------------------------------- */
+
+/* Section 4 */
+
+#section4{
+	position:relative;
+}
+
+#Nosartistes{
+	width:100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background: rgba(69, 100, 52, .25);
+	padding-top:2%;
+}
+	
+#PlusA{
+	position:absolute;
+	right:10px;
+	top:40px;
+}
+
+.blockparent{
+	display:flex;
+	width:40%;
+}
+
+#walter{
+	width:40%;
+}
+
+.test{
+	width:60%;
+	background-color: grey;
+	padding-left:10px;
+}
+
+.A{
+	border: 3px solid black;
+}
+
+.ligne{
+	display:inline-block;
+}
+
+/*------------------------------------------------------------------------------ CODE VALIDE ------------------------------------------------------------------------------ */
+
+/* -Page : Nos nouveautés- */
 
 
+#P2NosN{
+	padding-top:140px;
+	padding-bottom:50px;
+}
 
+#P2NN{
+	text-align:center;
+	font-family: 'Montserrat';
+	font-size:50px;	
+	padding-bottom:2%;
+}
 
+.P2ligne{
+	
+	flex-wrap:wrap;
+	text-align: center;
+	width:100%;
+}
 
+.P2oeuvre{
+	width:282px;
+	display:inline-block;
+	padding-left:3%;
+	padding-right:3%;
+	padding-bottom:2%;
+}
 
+.P2N1{
+	border: 3px solid black;
+}
 
+.P2texte{
+	text-align: start;
+	line-height: 0;
+}
+
+/* ----------------------------------- */
 
 /* Header */
 
@@ -92,6 +218,7 @@ body{
 	flex-wrap:wrap;
 	justify-content:space-between;
 	position:fixed;
+	background-color:#EFEFEF;
 }
 
 #logo{
@@ -123,10 +250,16 @@ body{
 	text-align: right;
 }
 
+a{
+	text-decoration: none;
+	text-decoration-color: black;
+}
+
 .li1{
 	display:inline-block;
 	padding-left: 1%;
 	padding-right: 1%;
+	font-size:22px;
 }
 
 .li2{
@@ -183,5 +316,3 @@ body{
 	padding-left: 1%;
 	padding-right: 1%;
 }
-
-/* ----------------------------------- */
