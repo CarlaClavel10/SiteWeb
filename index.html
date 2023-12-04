@@ -3,16 +3,22 @@
 <head>
 	<meta charset="utf8"/>
 	<meta name="viewport"content="width=device-width; initial-scale=1.0">
-	<title>Galerie Dechewsky</title>
-	<link rel="stylesheet" href="CSS/style.css">
+	<title>L'air dans l'art</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat Alternates' rel='stylesheet'>
 	<script src="https://kit.fontawesome.com/e0fb997e46.js"></script>
+	<!-- désactivé pour cause de conflit <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+	<!-- désactivé pour cause de conflit <script src="js/bootstrap.js"></script> -->
+	<!-- désactivé pour cause de conflit <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
-	
+
+
 <body>
 
-		<!-------------------------------- Header -------------------------------->
+<!-------------------------------- Header -------------------------------->
+		
 	<header id="header">
-		<!-- Header -->
 		<div id="logo">
 			<img id="logo1" src="images/logo1.png" alt="Logo L'air dans l'art">
 		</div>
@@ -20,14 +26,13 @@
 			<nav id="menu1">
 				<ul id="ul1">
 					<li class="li1"><a href="#notre-histoire"> Accueil</a> </li>
-					<li class="li1"><a href="#notre-histoire"> <h2>Nos nouveautés</h2></a> </li>
-					<li class="li1"><a href="#notre-histoire"> <h2>Nos style</h2></a> </li>
-					<li class="li1"><a href="#notre-histoire"> <h2>Nos artistes</h2></a> </li>
-					<li class="li1"><a href="#notre-histoire"> <h2>Qui sommes-nous ?</h2></a> </li>
+					<li class="li1"><a href="#notre-histoire"> Nos nouveautés</a> </li>
+					<li class="li1"><a href="#notre-histoire"> Nos style</a> </li>
+					<li class="li1"><a href="#notre-histoire"> Nos artistes</a> </li>
+					<li class="li1"><a href="#notre-histoire"> Qui sommes-nous ?</a> </li>
 				</ul>
 			</nav>
-		</div>
-		
+		</div>	
 		<div id="language">
 			<nav id="langues">
 				<ul>
@@ -41,34 +46,151 @@
 
 <!-------------------------------- Section 1 : Accueil -------------------------------->
 
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
 	<section id="section1">
-		<div id="splash1">
-			<img id="" src="images/splash1.png" alt="Logo L'air dans l'art">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="images/splash1.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/splash2.png" style="width:100%">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+			<div id="dot" style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+			</div>
+			<div id="S1T">
+				<h1 id="T1">Bienvenue,</h1>
+				<h1 id="T2">au cœur de notre galerie,</h1>
+				<h1 id="T3">L’air dans L’ART.</h1>
+			</div>	
 		</div>
-		<div id="S1T">
-			<h1 id="T1">Bienvenue,</h1>
-			<h1 id="T2">au cœur de notre galerie,</h1>
-			<h1 id="T3">L’air dans L’ART.</h1>
+	</section>
+
+<!-------------------------------- Section 2 : Nos nouveautés -------------------------------->
+
+	<section id="section2">
+
+		<div class="TITRE">
+			<h1>Nos nouveautés</h1>
+		</div>	
+		
+		<div class="PlusI">
+			<h4>Voir les nouveautés</h4>
+			<i class="fa-solid fa-plus"></i>
 		</div>
 
+		<div id="Nosnouveautes">
+			<div id="carousel">
+				<ul class="carousel-items">
+					<li class="carousel-item">
+						<div class="P2oeuvre">
+							<img class="P2N1" src="images/N1.png" style="padding:8px" alt="">
+							<div class="P2texte">
+								<h3 class="P2artiste">Alfred Sisley</h3>
+								<h4 class="P2nom">Reflets sur l'Etang</h4>
+								<h6 class="P2desc">Peinture à l'huile &nbsp;&nbsp;&nbsp; 90cm x 104cm</h6>
+								<h4 class="P2prix">508 €</h4>
+							</div>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="P2oeuvre">
+						<img class="P2N1" src="images/N2.png" style="padding:8px" alt="">
+							<div class="P2texte">
+								<h3 class="P2artiste">Frédéric Bazille</h3>
+								<h4 class="P2nom">Bathing at Asnières</h4>
+								<h6 class="P2desc">Acrylique &nbsp;&nbsp;&nbsp; 50cm x 70cm</h6>
+								<h4 class="P2prix">230 €</h4>
+							</div>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="P2oeuvre">
+							<img class="P2N1" src="images/N3.png" style="padding:8px" alt="">
+							<div class="P2texte">
+								<h3 class="P2artiste">Berthe Morisot</h3>
+								<h4 class="P2nom">Spring's Day</h4>
+								<h6 class="P2desc">Peinture à l'huile &nbsp;&nbsp;&nbsp; 20cm x 25cm</h6>
+								<h4 class="P2prix">390 €</h4>
+							</div>
+						</div>	
+					</li>
+					<li class="carousel-item">
+						<div class="P2oeuvre">
+						<img class="P2N1" src="images/N4.png" style="padding:8px" alt="">
+						<div class="P2texte">
+							<h3 class="P2artiste">Camille Pissarro</h3>
+							<h4 class="P2nom">The Pink Dress</h4>
+							<h6 class="P2desc">Peinture à l'huile &nbsp;&nbsp;&nbsp; 40cm x 50cm</h6>
+							<h4 class="P2prix">615 €</h4>
+						</div>
+					</div>	
+					</li>
+					<li class="carousel-item">
+						<div class="P2oeuvre">
+							<img class="P2N1" src="images/N5.png" style="padding:8px" alt="">
+							<div class="P2texte">
+								<h3 class="P2artiste">Mauffra</h3>
+								<h4 class="P2nom">Impression, Sunrise</h4>
+								<h6 class="P2desc">Aquarelle &nbsp;&nbsp;&nbsp; 90cm x 120cm</h6>
+								<h4 class="P2prix">1080 €</h4>
+							</div>
+						</div>	
+					</li>
+					<li class="carousel-item">
+						<div class="P2oeuvre">
+							<img class="P2N1" src="images/N6.png" style="padding:8px" alt="">
+							<div class="P2texte">
+								<h3 class="P2artiste">Gustave Caillebotte</h3>
+								<h4 class="P2nom">The Floor Scrapers</h4>
+								<h6 class="P2desc">Peinture à l'huile &nbsp;&nbsp;&nbsp; 80cm x 120cm</h6>
+								<h4 class="P2prix">840 €</h4>
+							</div>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="P2oeuvre">
+							<img class="P2N1" src="images/N7.png" style="padding:8px" alt="">
+							<div class="P2texte">
+								<h3 class="P2artiste">Achille Laugé</h3>
+								<h4 class="P2nom">Flowering Almond Trees</h4>
+								<h6 class="P2desc">Aquarelle &nbsp;&nbsp;&nbsp; 20cm x 30cm</h6>
+								<h4 class="P2prix">460 €</h4>
+							</div>
+						</div>
+					</li>
+					<li class="carousel-item">
+						<div class="P2oeuvre">
+							<img class="P2N1" src="images/N8.png" style="padding:8px" alt="">
+							<div class="P2texte">
+								<h3 class="P2artiste">Eva Gonzales</h3>
+								<h4 class="P2nom">The Lunch</h4>
+								<h6 class="P2desc">Aquarelle &nbsp;&nbsp;&nbsp; 55cm x 100cm</h6>
+								<h4 class="P2prix">309 €</h4>
+							</div>
+						</div>	
+					</li>
+				</ul>
+			</div>
+		</div>
 	</section>
 
 <!-------------------------------- Section 3 : Nos Styles -------------------------------->
 
-<!-- Titre Nos Styles -->
 	<section id="section3">
-	
 		<div class="TITRE">
-			<h1>Nos styles</h1>
+			<h1>Nos nouveautés</h1>
 		</div>	
-		
-		<div id="Nosstyles">
-<!-- Nos Styles : Gauche -->		
+		<div id="Nosstyles">	
 			<div id="NSP1">
 				<div class="styles1">
 					<div class="genreI">
 						<div class="texte1">
-							<h3 class="genre1">Alfred Sisley</h3>
+							<h3 class="genre1">Paysage</h3>
 						</div>
 						<img class="N1" src="images/S1.png" style="padding:8px" alt="">
 					</div>	
@@ -77,19 +199,18 @@
 				<div class="styles1">
 					<div class="genreI">
 						<div class="texte1">
-							<h3 class="genre1">Alfred Sisley</h3>
+							<h3 class="genre1">Street-art</h3>
 						</div>
 						<img class="N1" src="images/S2.png" style="padding:8px" alt="">
 					</div>	
 				</div>
-			</div>	
-<!-- Nos Styles : Droite -->
+			</div>
 			<div id="NSP2">
 				<div class="ligne">
 					<div class="styles2">
 						<div class="genreII">
 							<div class="texte2">
-								<h3 class="genre2">Alfred Sisley</h3>
+								<h3 class="genre2">Impressionnisme</h3>
 							</div>
 							<img class="N1" src="images/S3.png" style="padding:8px" alt="">
 						</div>	
@@ -98,28 +219,25 @@
 					<div class="styles2">
 						<div class="genreII">
 							<div class="texte2">
-								<h3 class="genre2">Alfred Sisley</h3>
+								<h3 class="genre2">Abstraction</h3>
 							</div>
 							<img class="N1" src="images/S4.png" style="padding:8px" alt="">
 						</div>	
 					</div>
 				</div>
-				
 				<div class="ligne">
 					<div class="styles2">
 						<div class="genreII">
 							<div class="texte2">
-								<h3 class="genre2">Alfred Sisley</h3>
+								<h3 class="genre2">Portrait</h3>
 							</div>
 							<img class="N1" src="images/S5.png" style="padding:8px" alt="">
 						</div>	
 					</div>	
-				
-				
 					<div class="styles2">
 						<div class="genreII">
 							<div class="texte2">
-								<h3 class="genre2">Alfred Sisley</h3>
+								<h3 class="genre2">Digital</h3>
 							</div>
 							<img class="N1" src="images/S6.png" style="padding:8px" alt="">
 						</div>	
@@ -130,25 +248,27 @@
 	</section>
 	
 <!-------------------------------- Section 4 : Nos artistes -------------------------------->
+
 	<section id="section4">
 		<div class="TITRE">
-			<h1>Nos Artistes</h1>
-		</div>	
-	
-		<div id="PlusA">
-			<h4>Voir tous les artistes</h4>
-			<img class="Bouton" src="images/B++.png" style="" alt="">
+			<h1>Nos artistes</h1>
 		</div>
-<!-- Nos Artistes : Gauche + Droite -->	
+		<div class="PlusI">
+			<h4>Voir tous les artistes</h4>
+			<i class="fa-solid fa-plus"></i>
+		</div>
 		<div id="Nosartistes">
-<!-- Nos Artistes : Gauche -->
 			<div class="blockparent">
-				<div id="Walter">
+				<div ="Walter">
 					<img class="A" src="images/A1.png" style="padding:8px" alt="">
 					<div class="DescA">
-						<h3 class="artiste">Alfred Sisley</h3>
-						<h4 class="nom">Reflets sur l'Etang</h4>
-						<img class="Bouton" src="images/B+.png" style="" alt="">
+						<div>
+							<h3 class="artiste">Walter Castillo</h3>
+							<h4 class="nom">Bélize</h4>
+						</div>
+						<div id="Aplus">
+							<i class="fa-solid fa-plus"></i>
+						</div>
 					</div>
 				</div>
 				<div class="test">
@@ -158,22 +278,18 @@
 								<img class="AO" src="images/A101.png" style="" alt="">
 							</div>	
 						</div>
-		
 						<div class="styles2">
 							<div class="genreII">
 								<img class="AO" src="images/A102.png" style="" alt="">
 							</div>	
 						</div>
 					</div>
-				
 					<div class="ligne">
 						<div class="styles2">
 							<div class="genreII">
 								<img class="AO" src="images/A103.png" style="" alt="">
 							</div>	
 						</div>	
-				
-				
 						<div class="styles2">
 							<div class="genreII">
 								<img class="AO" src="images/A104.png" style="" alt="">
@@ -182,14 +298,17 @@
 					</div>
 				</div>
 			</div>
-<!-- Nos Artistes : Droite -->
 			<div class="blockparent">
 				<div id="Walter">
 					<img class="A" src="images/A2.png" style="padding:8px" alt="">
 					<div class="DescA">
-						<h3 class="artiste">Alfred Sisley</h3>
-						<h4 class="nom">Reflets sur l'Etang</h4>
-						<img class="Bouton" src="images/B+.png" style="" alt="">
+						<div>
+							<h3 class="artiste">Waroox</h3>
+							<h4 class="nom">Île de la Réunion</h4>
+						</div>
+						<div id="Aplus">
+							<i class="fa-solid fa-plus"></i>
+						</div>
 					</div>
 				</div>
 				<div class="test">
@@ -199,22 +318,18 @@
 								<img class="AO" src="images/A201.png" style="" alt="">
 							</div>	
 						</div>
-		
 						<div class="styles2">
 							<div class="genreII">
 								<img class="AO" src="images/A202.png" style="" alt="">
 							</div>	
 						</div>
 					</div>
-				
 					<div class="ligne">
 						<div class="styles2">
 							<div class="genreII">
 								<img class="AO" src="images/A203.png" style="" alt="">
 							</div>	
-						</div>	
-				
-				
+						</div>
 						<div class="styles2">
 							<div class="genreII">
 								<img class="AO" src="images/A204.png" style="" alt="">
@@ -223,84 +338,127 @@
 					</div>
 				</div>
 			</div>
-
+		</div>
 	</section>
 	
-<!-------------------------------- Section 3 : Nos Styles -------------------------------->
+<!-------------------------------- Section 5 : Qui sommes-nous ? -------------------------------->
 
-<!-- Titre Nos Styles -->
-	<section id="section3">
-	
-		<div id="NStitre">
-			<h1>Nos styles</h1>
+	<section id="section5">
+		<div class="TITRE">
+			<h1>Qui sommes-nous ?</h1>
 		</div>	
-		
-		<div id="Nosstyles">
-<!-- Nos Styles : Gauche -->		
-			<div id="NSP1">
-				<div class="styles1">
-					<div class="genreI">
-						<div class="texte1">
-							<h3 class="genre1">Alfred Sisley</h3>
-						</div>
-						<img class="N1" src="images/S1.png" style="padding:8px" alt="">
+		<div class="PlusI">
+			<h4>En savoir plus</h4>
+			<i class="fa-solid fa-plus"></i>
+		</div>
+		<div id="QSN">
+			<div id="QSNG">
+				<div id="QSNGText">
+					<div id="divtext">
+						<a>Notre galerie L’air dans l’art située dans la vieille ville de Nice, au 48 avenue des rosiers, est impatiente de vous partager ses coups de coeur.<br><br>Un désir de s’aérer l’esprit ou d’égayer votre sensibilité ? Une sélection d’artistes faite par nos soins, sans cesse renouvelées et aux styles diversifiés, vous fera voyager. L’ambiance de L’air dans l’art n’attend que vous.<br><br>S’il vous vient l’envie de donner une touche artistique à votre chez vous, nos experts en art seront vous conseiller avec passion à propos de vos investissements. Ne vous en faite pas, il y en a pour tous les goûts et tous les budgets !<br><br>Source d’inspiration ou mise en avant de nos âmes d’artistes, notre galerie offre de l’aide aux créateurs émergeants lors de ses expositions éphémères.<br>L’air dans l’art vous ouvre ses portes du mercredi au dimanche de 10h à 21h.</a>
 					</div>	
 				</div>
-		
-				<div class="styles1">
-					<div class="genreI">
-						<div class="texte1">
-							<h3 class="genre1">Alfred Sisley</h3>
-						</div>
-						<img class="N1" src="images/S2.png" style="padding:8px" alt="">
-					</div>	
+				<div id="gal">
+					<img id="" src="images/QSN1.png" style="" alt="">
 				</div>
-			</div>	
-<!-- Nos Styles : Droite -->
-			<div id="NSP2">
-				<div class="ligne">
-					<div class="styles2">
-						<div class="genreII">
-							<div class="texte2">
-								<h3 class="genre2">Alfred Sisley</h3>
-							</div>
-							<img class="N1" src="images/S3.png" style="padding:8px" alt="">
-						</div>	
-					</div>
-		
-					<div class="styles2">
-						<div class="genreII">
-							<div class="texte2">
-								<h3 class="genre2">Alfred Sisley</h3>
-							</div>
-							<img class="N1" src="images/S4.png" style="padding:8px" alt="">
-						</div>	
-					</div>
+			</div>
+			<div id="QSND">
+				<div id="QSNDText">
+					<a id="Contacts">Contacts:</a>
+					<ul>
+						<li><i class="fa-solid fa-circle"></i><a class="ST">Mr. Dechewsky (dirigeant) :</a></li>
+						<br><a>Numéro de téléphone : +33 6 78 90 12 35<br>E-mail : mr.dechewsky@gmail.com</a>
+						<li><i class="fa-solid fa-circle"></i><a class="ST">Investisseurs et artistes</a>
+						<br><a>Numéro de téléphone : +33 6 78 90 12 34<br>E-mail : pro@lairart-nice.com</a>
+						<li><i class="fa-solid fa-circle"></i><a class="ST">Expertise en art</a>
+						<br><a>E-mail : expert@lairart-nice.com</a>
+						<li><i class="fa-solid fa-circle"></i><a class="ST">Galerie</a>
+						<br><a>Numéro d'accueil : +33 01 63 45 85 56<br>Fax : 01 63 45 78 52<br>E-mail : contact@lairart-nice.com<br>Adresse : 48 avenue des rosiers, 06000, Nice.</a>
+					</ul>
 				</div>
-				
-				<div class="ligne">
-					<div class="styles2">
-						<div class="genreII">
-							<div class="texte2">
-								<h3 class="genre2">Alfred Sisley</h3>
-							</div>
-							<img class="N1" src="images/S5.png" style="padding:8px" alt="">
-						</div>	
-					</div>	
-				
-				
-					<div class="styles2">
-						<div class="genreII">
-							<div class="texte2">
-								<h3 class="genre2">Alfred Sisley</h3>
-							</div>
-							<img class="N1" src="images/S6.png" style="padding:8px" alt="">
-						</div>	
+				<div id="map">
+					<div id="map-responsive">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2884.6706994389388!2d7.276785999999999!3d43.69660899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDQxJzQ3LjgiTiA3wrAxNiczNi40IkU!5e0!3m2!1sfr!2sfr!4v1700042475589!5m2!1sfr!2sfr" width="562" height="316" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
 			</div>
+		</div>	
+	</section>
+	
+<!-------------------------------- Section 6 : Nos événements à venir -------------------------------->
+
+	<section id="section6">
+		<div id="NEAV">
+			<h1>Nos évènements à venir :</h1>
+		</div>
+		
+		<div class="NEAV13">
+			<div class="date">
+				<a>15 Fev -<br>17 Avr</a>
+			</div>
+			<div class="EVtext">
+				<div class="EVTitre">
+					<a>Éclats de Vie</a>
+				</div>
+				<div class="EVDesc">
+					<a>“Exploration des émotions et de la vitalité à travers la couleur”</a>
+				</div>
+			</div>
+			<div class="ipan">
+				<i class="fa-solid fa-cart-arrow-down fa-2xl"></i>
+			</div>
+		</div>
+		
+		<div id="NEAV2">
+			<div class="date">
+				<a>1 Mai -<br>15 Juin</a>
+			</div>
+			<div class="EVtext">
+				<div class="EVTitre">
+					<a>Nature en Fusion</a>
+				</div>
+				<div class="EVDesc">
+					<a>“L’interprétation des éléments naturels avec des couleurs audacieuses”</a>
+				</div>
+			</div>
+			<div class="ipan">
+				<i class="fa-solid fa-cart-arrow-down fa-2xl"></i>
+			</div>
+		</div>
+			
+		<div class="NEAV13">
+			<div class="date">
+				<a>8 Nov -<br>22 Dec</a>
+			</div>
+			<div class="EVtext">
+				<div class="EVTitre">
+					<a>Lumières Abstraites</a>
+				</div>
+				<div class="EVDesc">
+					<a>“L’abstraction des lumières et des ombres à travers une palette de couleurs électriques”</a>
+				</div>
+			</div>
+			<div class="ipan">
+				<i class="fa-solid fa-cart-arrow-down fa-2xl"></i>
+			</div>
 		</div>
 	</section>
+	
+<!-------------------------------- Section 7 : Nesletter -------------------------------->
+	
+	<section id="section7">
+		<div id="NSLT">
+			<img id="" src="images/NSLT.png" style="" alt="">
+			<a id="TGauche1">Une sélection en exclusivité !</a>
+			<a id="TGauche2">Un mélange entre coups de coeur et nouveautés pour votre plus grand bonheur</a>
+			<a id="TDroite">À découvrir de manière hebdomadaire directement dans votre boîte mail en s’inscrivant à notre newsletter :</a>
+			<input id="Nom" type="text" placeholder="Nom" name="Nom" required>
+			<input id="Prenom" type="text" placeholder="Prénom" name="Prénom" required>
+			<input id="Email" type="text" placeholder="Adresse E-mail" name="Mail" required>
+			<input id="Envoyer" type="submit" value="Envoyer &rarr;">
+		</div>
+	</section>
+	
 	
 <!-------------------------------- Footer -------------------------------->
 
@@ -330,4 +488,11 @@
 		</div>
 	</footer>
 		
-		
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
