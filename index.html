@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="utf8"/>
-	<meta name="viewport"content="width=device-width; initial-scale=1.0">
+	<meta name="viewport"content="width=device-width; initial-scale=1.0" content="Free Web tutorials for HTML and CSS">
 	<title>L'air dans l'art</title>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat Alternates' rel='stylesheet'>
@@ -11,6 +11,7 @@
 	<!-- désactivé pour cause de conflit <script src="js/bootstrap.js"></script> -->
 	<!-- désactivé pour cause de conflit <link rel="stylesheet" href="css/bootstrap.css"> -->
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
@@ -19,29 +20,46 @@
 <!-------------------------------- Header -------------------------------->
 		
 	<header id="header">
-		<div id="logo">
-			<img id="logo1" src="images/logo1.png" alt="Logo L'air dans l'art">
-		</div>
-		<div id="menu">
-			<nav id="menu1">
-				<ul id="ul1">
-					<li class="li1"><a href="#notre-histoire">Accueil</a> </li>
-					<li class="li1"><a href="#notre-histoire">Nos nouveautés</a> </li>
-					<li class="li1"><a href="#notre-histoire">Nos style</a> </li>
-					<li class="li1"><a href="#notre-histoire">Nos artistes</a> </li>
-					<li class="li1"><a href="#notre-histoire">Qui sommes-nous ?</a> </li>
-				</ul>
-			</nav>
-		</div>	
-		<div id="language">
-			<nav id="langues">
-				<ul>
-					<li class="li2"><a href="#notre-histoire"> <h3>FR</h3></a> </li>
-					<li class="li2"> <h3>|</h3> </li>
-					<li class="li2"><a href="#notre-histoire"> <h3>EN</h3></a> </li>
-				</ul>
-			</nav>	
-		</div>
+		<!-- Header -->
+			<div id="logo">
+				<img id="logo1" src="images/logo1.png" alt="Logo L'air dans l'art">
+			</div>
+			<div id="menu">
+				<nav id="menu1">
+					<ul id="ul1">
+						<li class="li1"><a href="./index.html #section1">Accueil</a> </li>
+						<li class="li1"><a href="./index.html #section2">Nos nouveautés</a> </li>
+						<li class="li1"><a href="./index.html #section3">Nos style</a> </li>
+						<li class="li1"><a href="./index.html #section4">Nos artistes</a> </li>
+						<li class="li1"><a href="./index.html #section5">Qui sommes-nous ?</a> </li>
+					</ul>
+				</nav>
+			</div>
+			
+			<div id="language">
+				<nav id="langues">
+					<ul>
+						<li class="li2"><a href=""> <h3>FR</h3></a> </li>
+						<li class="li2"> <a>|</a> </li>
+						<li class="li2"><a href=""> <h3>EN</h3></a> </li>
+					</ul>
+				</nav>	
+			</div>
+		
+<input type="checkbox" id="hamburger-input" class="burger-shower" />
+<label id="hamburger-menu" for="hamburger-input">
+<nav id="sidebar-menu">
+<ul>
+<li><a href="./index.html #section1">Accueil</a> </li>
+<li><a href="./index.html #section2">Nos nouveautés</a> </li>
+<li><a href="./index.html #section3">Nos style</a> </li>
+<li><a href="./index.html #section4">Nos artistes</a> </li>
+<li><a href="./index.html #section5">Qui sommes-nous ?</a> </li>
+</ul>
+</nav>
+</label>
+
+
 	</header>
 
 <!-------------------------------- Section 1 : Accueil -------------------------------->
@@ -51,10 +69,12 @@
 	<section id="section1">
 		<div class="slideshow-container">
 			<div class="mySlides fade">
-				<img src="images/splash1.png" style="width:100%">
+			<div id="OV">
+				<img class="img" src="images/splash1.png" style="width:100%">
+			</div>
 			</div>
 			<div class="mySlides fade">
-				<img src="images/splash2.png" style="width:100%">
+				<img class="img" src="images/splash2.png" style="width:100%">
 			</div>
 			<a class="prev" onclick="plusSlides(-1)">❮</a>
 			<a class="next" onclick="plusSlides(1)">❯</a>
@@ -63,8 +83,6 @@
 				<span class="dot" onclick="currentSlide(2)"></span> 
 			</div>
 			<div id="S1T">
-				<h1 id="T1">Bienvenue,</h1>
-				<h1 id="T2">au cœur de notre galerie,</h1>
 				<h1 id="T3">L’air dans L’ART.</h1>
 			</div>	
 		</div>
@@ -76,11 +94,11 @@
 
 		<div class="TITRE">
 			<h2>Nos nouveautés</h2>
-		</div>	
+		</div>
 		
 		<div class="PlusI">
-			<h4>Voir les nouveautés</h4>
-			<i class="fa-solid fa-plus"></i>
+			<a href="./index2.html">Voir les nouveautés</a>
+			<a href="./index2.html"><i href="./index2.html" class="fa-solid fa-plus"></i></a>
 		</div>
 
 		<div id="Nosnouveautes">
@@ -192,7 +210,7 @@
 						<div class="texte1">
 							<h3 class="genre1">Paysage</h3>
 						</div>
-						<img class="N1" src="images/S1.png" style="padding:8px" alt="">
+						<a href=""><img class="N1" id="im1" src="images/S1.png" style="padding:8px" alt=""></a>
 					</div>	
 				</div>
 		
@@ -201,7 +219,7 @@
 						<div class="texte1">
 							<h3 class="genre1">Street-art</h3>
 						</div>
-						<img class="N1" src="images/S2.png" style="padding:8px" alt="">
+					<a href=""><img class="N1" id="im1" src="images/S2.png" style="padding:8px" alt=""></a>
 					</div>	
 				</div>
 			</div>
@@ -212,7 +230,7 @@
 							<div class="texte2">
 								<h3 class="genre2">Impressionnisme</h3>
 							</div>
-							<img class="N1" src="images/S3.png" style="padding:8px" alt="">
+							<a href=""><img class="N1" src="images/S3.png" style="padding:8px" alt=""></a>
 						</div>	
 					</div>
 		
@@ -221,7 +239,7 @@
 							<div class="texte2">
 								<h3 class="genre2">Abstraction</h3>
 							</div>
-							<img class="N1" src="images/S4.png" style="padding:8px" alt="">
+							<a href=""><img class="N1" src="images/S4.png" style="padding:8px" alt=""></a>
 						</div>	
 					</div>
 				</div>
@@ -231,7 +249,7 @@
 							<div class="texte2">
 								<h3 class="genre2">Portrait</h3>
 							</div>
-							<img class="N1" src="images/S5.png" style="padding:8px" alt="">
+							<a href=""><img class="N1" src="images/S5.png" style="padding:8px" alt=""></a>
 						</div>	
 					</div>	
 					<div class="styles2">
@@ -239,7 +257,7 @@
 							<div class="texte2">
 								<h3 class="genre2">Digital</h3>
 							</div>
-							<img class="N1" src="images/S6.png" style="padding:8px" alt="">
+							<a href=""><img class="N1" src="images/S6.png" style="padding:8px" alt=""></a>
 						</div>	
 					</div>
 				</div>
@@ -254,12 +272,12 @@
 			<h2>Nos artistes</h2>
 		</div>
 		<div class="PlusI">
-			<h5>Voir tous les artistes</h5>
-			<i class="fa-solid fa-plus"></i>
+			<a href="">Voir tous les artistes</a>
+			<a href=""><i class="fa-solid fa-plus"></i></a>
 		</div>
 		<div id="Nosartistes">
 			<div class="blockparent">
-				<div ="Walter">
+				<div class id="Wawa">
 					<img class="A" src="images/A1.png" style="padding:8px" alt="">
 					<div class="DescA">
 						<div>
@@ -299,9 +317,9 @@
 				</div>
 			</div>
 			<div class="blockparent">
-				<div id="Walter">
+				<div class id="Wawa">
 					<img class="A" src="images/A2.png" style="padding:8px" alt="">
-					<div class="DescA">
+					<div id="Desc1" class="DescA">
 						<div>
 							<h3 class="artiste">Waroox</h3>
 							<h4 class="nom">Île de la Réunion</h4>
@@ -348,8 +366,8 @@
 			<h2>Qui sommes-nous ?</h2>
 		</div>	
 		<div class="PlusI">
-			<h5>En savoir plus</h5>
-			<i class="fa-solid fa-plus"></i>
+			<a href="">En savoir plus</a>
+			<a href=""><i class="fa-solid fa-plus"></i></a>
 		</div>
 		<div id="QSN">
 			<div id="QSNG">
@@ -359,14 +377,14 @@
 					</div>	
 				</div>
 				<div id="gal">
-					<img id="" src="images/QSN1.png" style="" alt="">
+					<img id="gali" src="images/QSN1.png" style="" alt="">
 				</div>
 			</div>
 			<div id="QSND">
 				<div id="QSNDText">
 					<a id="Contacts">Contacts:</a>
 					<ul>
-						<li><i class="fa-solid fa-circle"></i><a class="ST">Mr. Dechewsky (dirigeant) :</a></li>
+						<li><i class="fa-solid fa-circle"></i><a class="ST">Mr. Dechewsky (dirigeant) :</a>
 						<br><a>Numéro de téléphone : +33 6 78 90 12 35<br>E-mail : mr.dechewsky@gmail.com</a>
 						<li><i class="fa-solid fa-circle"></i><a class="ST">Investisseurs et artistes</a>
 						<br><a>Numéro de téléphone : +33 6 78 90 12 34<br>E-mail : pro@lairart-nice.com</a>
@@ -471,9 +489,7 @@
 					<li class="liI"><a href="#notre-histoire"> <h3>Vie privée et cookies</h3></a> </li>
 				</ul>
 			</nav>
-			<img id="logocop1" src="images/Logocop.png" alt="">
-		</div>
-		<div id="RSD">
+					<div id="RSD">
 			<div id="ecris">
 				<h3>Suivez-nous sur nos réseaux !</h3>
 			</div>
@@ -486,7 +502,9 @@
 				</ul>
 			</nav>	
 		</div>
-	</footer>
+		</div>
+
+	</footer>	
 </body>
 
 
