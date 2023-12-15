@@ -453,8 +453,9 @@ body{
 	font-size:5vw;
 	color:white;
 	position: absolute;
-	bottom: 10%;
-	padding-left:1%;
+	bottom: 5%;
+	left:5%;
+		font-family: 'Montserrat Alternates';
 }
 
 #T1{
@@ -467,7 +468,7 @@ body{
 
 @media only screen and (max-width: 700px) {
 #S1T{
-	font-size:6vw;
+	font-size:8vw;
 }
 }
 
