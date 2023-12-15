@@ -325,11 +325,16 @@ input[type=submit] {
 }
 
 #QSNDText ul{
-	margin:0;
+
+	  margin: 0;
+    padding: 0;
+	
 }
 
 #QSNDText li{
-	padding-top:20px;
+
+		  margin: 0;
+    padding: 0;
 }
 
 #QSNDText i{
@@ -340,7 +345,7 @@ padding-right:10px;
 
 #gmap{
 	width:562px;
-	height:316px;
+	height:280px;
 }
 
 #map-responsive {
@@ -973,12 +978,17 @@ ul{
 	width:100%;
 }
 
+.P2artiste{
+	font-size:30px;
+}
+
 .P2oeuvre{
 	width:282px;
 	display:inline-block;
 	padding-left:3%;
 	padding-right:3%;
 	padding-bottom:2%;
+	font-size:20px;
 }
 
 .P2N1{
