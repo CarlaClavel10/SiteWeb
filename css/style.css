@@ -738,7 +738,9 @@ left:10%;
 .slideshow-container {
   max-width: 100%;
   position: relative;
-  margin: auto; 
+  max-height:    max-height: 100vh;
+  overflow: hidden;
+
 }
 
 
