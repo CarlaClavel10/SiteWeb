@@ -1191,7 +1191,7 @@ a{
 }
 
 #RSD{
-		width:100%;
+	width:100%;
 	text-align: center;
 }
 
@@ -1222,8 +1222,11 @@ a{
 	font-style:bold;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 600px) {
 #footer{
-	height:250px;
+	height:320px;
 }
+
+#ul4{
+	padding-bottom:60px;
 }
