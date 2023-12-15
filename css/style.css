@@ -19,10 +19,6 @@
 	height:160px;
 }
 
-#overlay{
-	
-}
-
 #TGauche1{
 	position:absolute;
 	top:10px;
@@ -87,8 +83,96 @@ input[type=submit]:hover {
   opacity: 0.9;
 }
 
+#INSLT2{
+	display:none;
+}
+
+@media only screen and (max-width: 920px) {
+
+#INSLT{
+	display:none;
+}
+
+#INSLT2{
+	display:block;
+}
+
+#NSLT{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position:relative;
+	overflow:hidden;
+	width:304px;
+	height:490px;
+}
+
+#TGauche1{
+	top:10px;
+	left:10px;
+	font-size:30px;
+	width:280px;
+	text-align:center;
+}
+
+#TGauche2{
+	position:absolute;
+	top:120px;
+	left:10px;
+	width:280px;
+		font-weight:bold;
+			width:280px;
+	text-align:center;
+}
 
 
+#TDroite{
+	position:absolute;
+	top:210px;
+	left: 10px;
+	width:280px;
+		font-weight:bold;
+			width:280px;
+	text-align:center;
+}
+
+#Nom{
+	position:absolute;
+	width:130px;
+	height:25px;
+	left:10px;
+	bottom:110px;
+}
+
+#Prenom{
+	position:absolute;
+	width:130px;
+	height:25px;
+	left:150px;
+	bottom:110px;
+}
+
+#Email{
+	position:absolute;
+	left:10px;
+	bottom: 70px;
+	width:270px;
+	height:25px;
+}
+
+#Envoyer{
+	position:absolute;
+	bottom:25px;
+	left:50px;
+	right:50px;
+	height:25px;
+}
+
+input[type=submit] {
+  background-color: rgba(69, 100, 52) ;
+}
+
+}
 
 
 /* Section 6 */
@@ -183,6 +267,14 @@ input[type=submit]:hover {
 
 }
 
+@media only screen and (max-width: 600px) {
+
+#NEAV{
+	text-align:center;
+		font-size:24px;
+}
+
+}
 /* Section 5 */
 
 #section5{
@@ -297,13 +389,6 @@ display: block;
 #QSND{  text-align: center;
 }
 
-#QSNDText{
-	
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #QSNDText ul{
 	list-style:none;
 	padding:0;
@@ -395,6 +480,13 @@ body{
 .TITRE{
 	padding-left:10%;
 	font-size:30px;
+}
+
+@media only screen and (max-width: 1200px) {
+.TITRE{
+		padding-left:0%;
+text-align:center;
+}
 }
 
 #Nosstyles{
@@ -757,6 +849,20 @@ left:10%;
   color: white;
   padding: 6px;
   border-radius: 4px;
+}
+
+@media only screen and (max-width: 1200px) {
+.PlusI{
+
+	top:50px;
+}
+}
+
+@media only screen and (max-width: 375px) {
+#PlusIexc{
+
+	top:100px;
+}
 }
 
 
