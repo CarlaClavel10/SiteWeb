@@ -384,8 +384,8 @@ body{
 /* ----------------------------------- */
 
 /* Section 3 */
-
 #section3 h3{
+	
 	font-size:30px;
 	padding-left:15px;
 	color:#EFEFEF;
@@ -472,7 +472,7 @@ text-align: center;
 }
 
 #NSP2{
-	text-align: center
+	text-align: center;
 }
 
 
@@ -568,32 +568,36 @@ text-align: center;
 	width:100%;
 	display: block;
     justify-content: none;
-
+	position:relative;
 	background: rgba(69, 100, 52, .25);
 	padding-top:2%;
 	gap:60px;
 }
-	
-	
+
+.blockparent{
+ justify-content: center;
+	margin-bottom:30px;
 	
 }
 
-@media only screen and (max-width: 925px) {
 
-#section4{
-	position:static;
+.test{
+	padding-left:10px;
+}
+
+}
+@media only screen and (max-width: 700px) {
+	
+.test{
+	padding-left:0%;
 }
 	
 .blockparent{
-	position: relative;
 	display:block;
+
 }
 
 #Nosartistes{
-
-	display: block;
-
-
 }
 
 .test{
@@ -604,26 +608,33 @@ text-align: center;
 	width:90%;
 }
 
-.Wawa{
-padding-left:100px;
-position: absolute;
-right:0;
-top: 0;
+.A{
+	width:35%;
+	float:left;
+position: relative;
+left:10%;
 }
 
-.A{
-	width:40%;
-
+.wawa{
+	width:90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .DescA{
-
-	
+float:left;
+padding-left:20px;
+      position: relative;
+left:10%;
 }
 
-
+.test{
+	width:100%;
+	padding-top:15px;
+ justify-content: center;
 }
 
+}
 /* CARROUSSEL */
 
 
@@ -705,7 +716,10 @@ top: 0;
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+	
+.prev, .next,.text {
+	font-size: 11px
+}
 }
 
 @media only screen and (max-width: 1700px) {
