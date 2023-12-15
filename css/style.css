@@ -654,7 +654,7 @@ text-align: center;
 	line-height: 0;
 }
 
-#Aplus i{
+.Aplus i{
   border: none;
   outline: none;
   background-color: black;
@@ -1036,10 +1036,6 @@ ul{
 	position:absolute;
 }
 
-#texte{
-	heitgh:30px;
-}
-
 #menu{
 	position:absolute;
 	text-align: center;
@@ -1141,7 +1137,7 @@ a{
 }
 
 #hamburger-menu a {
-  color: #00000;
+  color: #000000;
   font-size: 1.3rem;
   text-decoration: none;
   border-bottom:1px solid black;
@@ -1218,14 +1214,6 @@ a{
 	text-align: center;
 }
 
-#RS{
-		float:bottom;
-}
-
-#logocop1{
-
-}
-
 .liI{
 	display:inline-block;
 	padding-left: 1%;
@@ -1242,7 +1230,6 @@ a{
 
 #ecris{
 	font-size:20px;
-	font-style:bold;
 }
 
 @media screen and (max-width: 600px) {
