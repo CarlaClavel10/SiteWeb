@@ -162,7 +162,7 @@ input[type=submit]:hover {
 @media only screen and (max-width: 700px) {
 .EVDesc{
 	width:50%;
-		align-items: center;
+	align-items: center;
 	justify-content: center;
 	text-align: center;
 }
@@ -246,6 +246,11 @@ padding-right:10px;
 	
 }
 
+#gmap{
+	width:562px;
+	height:316px;
+}
+
 #map-responsive {
 	position: relative;
     padding-bottom: px; // This is the aspect ratio
@@ -264,14 +269,72 @@ padding-right:10px;
 @media only screen and (max-width: 1250px) {
 #QSN{
 	display: block; 
+	
 }
 
 #QSNG{
-	width:100%;
+	width:90%;
+	  margin-left: auto;
+    margin-right: auto;
+		
 }
 
 #gali{
-	width:95%;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#divtext{
+	width:85%;
+		  margin-left: auto;
+    margin-right: auto;
+
+	
+}
+
+#QSND{  text-align: center;
+}
+
+#QSNDText{
+	
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#QSNDText ul{
+	list-style:none;
+	padding:0;
+}
+
+
+
+#QSNDText{
+	margin:1%;
+}
+
+}
+
+@media only screen and (max-width: 700px) {
+	
+	#gali{
+width:100%;
+
+}
+
+
+
+}
+
+@media only screen and (max-width: 590px) {
+
+
+#gmap{
+	width:90%;
+	
+
 }
 
 }
@@ -341,18 +404,14 @@ body{
     align-items: center;
 }
 
-#NSP1{
-	display:inline-block;
-}
+
 
 #NSP1 img{
 	height: auto; 
     width: auto; 
 }
 
-#ligne1{
-	display:inline-block;
-}
+
 
 .styles1{
 	display:inline-block;
@@ -375,10 +434,7 @@ body{
 	top:10px;
 }
 
-#NSP2{
-	display:inline-block;
-	width:35%;
-}
+
 
 .genre2{
 	position:absolute;
@@ -402,11 +458,47 @@ body{
 
 }
 
+@media only screen and (max-width: 1800px) {
+	
+	#Nosstyles{
+		display: block;
+		
+}
+
+
+#NSP1{
+	display:block;
+text-align: center;
+}
+
+#NSP2{
+	text-align: center
+}
+
+
+}
+
+
 @media only screen and (max-width: 925px) {
 
 #Nosstyles{
 	width:100%;
 	display: block;
+	  margin-left: auto;
+  margin-right: auto;
+}
+
+.styles1 img{
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.styles2 img{
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 #NSP1 img{
@@ -469,6 +561,23 @@ body{
 	display:inline-block;
 }
 
+@media only screen and (max-width: 1400px) {
+	
+#Nosartistes{
+	align-items: center;
+	width:100%;
+	display: block;
+    justify-content: none;
+
+	background: rgba(69, 100, 52, .25);
+	padding-top:2%;
+	gap:60px;
+}
+	
+	
+	
+}
+
 @media only screen and (max-width: 925px) {
 
 #section4{
@@ -515,7 +624,7 @@ top: 0;
 
 }
 
-/* TEST CAROUSSEL */
+/* CARROUSSEL */
 
 
 .mySlides {
