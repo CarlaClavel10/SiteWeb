@@ -433,6 +433,7 @@ padding: 0;
 	bottom: 5%;
 	left:5%;
 	font-family: 'Montserrat Alternates';
+	-webkit-text-stroke: 1px black;
 }
 
 #T1{
@@ -495,6 +496,7 @@ padding: 0;
 
 .genreI{
 	position:relative;
+
 }
 
 .genreI h3{
@@ -508,12 +510,14 @@ padding: 0;
 
 .genre1{
 	top:10px;
+	-webkit-text-stroke: 1px black;
 }
 
 
 
 .genre2{
 	position:absolute;
+	-webkit-text-stroke: 1px black;
 }
 
 .genreII{
