@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>L'air dans l'art</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat Alternates" rel="stylesheet">
@@ -66,11 +66,11 @@
 			<div class="slideshow-container">
 				<div class="mySlides fade">
 				<div id="OV">
-					<img class="img" src="images/splash1.png" style="width:100%" alt="Green Wheat Fields de Vincent Van Gogh. Tableau dans le style impressionniste, combinant des nuances de vert pour représenter un champs de blé.">
+					<img class="img" src="images/splash1.png" alt="Green Wheat Fields de Vincent Van Gogh. Tableau dans le style impressionniste, combinant des nuances de vert pour représenter un champs de blé.">
 				</div>
 				</div>
 				<div class="mySlides fade">
-					<img class="img" src="images/splash2.png" style="width:100%" alt="Le vol de l'aige de Âme Sauvage. Peinture acrylique représentant le vol de l'aigle de façon abstraite. Combinant multiples peintures et formes dont l'artiste laisse à interprétation.">
+					<img class="img" src="images/splash2.png" alt="Le vol de l'aige de Âme Sauvage. Peinture acrylique représentant le vol de l'aigle de façon abstraite. Combinant multiples peintures et formes dont l'artiste laisse à interprétation.">
 				</div>
 				<a class="prev" onclick="plusSlides(-1)">❮</a>
 				<a class="next" onclick="plusSlides(1)">❯</a>
@@ -460,10 +460,10 @@
 				<a id="TGauche1">Une sélection en exclusivité !</a>
 				<a id="TGauche2">Un mélange entre coups de coeur et nouveautés pour votre plus grand bonheur</a>
 				<a id="TDroite">À découvrir de manière hebdomadaire directement dans votre boîte mail en s’inscrivant à notre newsletter :</a>
-				<input id="Nom" type="text" placeholder="Nom" name="Nom" required>
-				<input id="Prenom" type="text" placeholder="Prénom" name="Prénom" required>
-				<input id="Email" type="text" placeholder="Adresse E-mail" name="Ad. E-Mail" required>
-				<input id="Envoyer" type="submit" value="Envoyer &rarr;">
+				<input id="Nom" type="text" placeholder="Nom" name="Nom" required/>
+				<input id="Prenom" type="text" placeholder="Prénom" name="Prénom" required/>
+				<input type="email" id="Email" placeholder="Adresse mail" name="email" />
+				<input id="Envoyer" type="submit" value="Envoyer &rarr;" onSubmit="alert('Thank you for your feedback.');">
 			</div>
 		</section>
 
